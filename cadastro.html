@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://i.imgur.com/sLOOJ7L.png">
+    </div>
+    <div class="form-container">
+        <div class="form-content">
+            <form action="#" method="POST">
+                <label for="telefone1">DIGITE O TELEFONE:</label>
+                <input type="tel" id="telefone1" name="telefone1" pattern="[0-9]{10,}" required onpaste="return false;"><br><br>
+
+                <label for="telefone2">DIGITE NOVAMENTE:</label>
+                <input type="tel" id="telefone2" name="telefone2" pattern="[0-9]{10,}" required onpaste="return false;"><br><br>
+
+                <div id="nomeField" class="hidden">
+                    <label for="nome">DIGITE SEU NOME:</label>
+                    <input type="text" id="nome" name="nome" pattern="[A-Za-z\s]{3,}" required><br><br>
+                </div>
+                <div id="cpfField" class="hidden">
+                    <label for="cpf">INFORME O CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required><br><br>
+                </div>
+                <input type="submit" id="submitButton" value="Prosseguir" class="hidden">
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="script.js"></script>
+    <script src="cpfValidador.js"></script>
+</body>
+</html>
